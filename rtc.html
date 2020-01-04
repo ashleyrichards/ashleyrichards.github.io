@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RTC Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+      
+    <!-- Custom fonts for this template -->
+    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libs/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="libs/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Start</span>
+        <span class="d-none d-lg-block">
+            <h3 class="mb-0">RTC Data</h3>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#m2">The Target Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#m3">The Problem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#m4">The Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#m5">The Prototype</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#m6">The Evaluation</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <img class="img-fluid img-profile mx-auto mb-2" src="images/RTC_Logo.png" alt="">
+            <p><a href="http://ashleyotero.com/public_html/capstone/files/RTC%20Data%20Project.pptx">Download Presentation Slides 
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-powerpoint-o fa-stack-1x fa-inverse"></i>
+                </span></a></p>
+
+          <h2 class="mb-5">The Idea</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Summary</h3>
+                <p>The Department of Energy (DOE) has been federally funding Sandia National Laboratories to provide system field performance and degradation monitoring data via the Regional Test Center (RTC) data project. The RTCs are field sites that test photovoltaic products in a variety of climates and for photovoltaic performance and reliability.</p>
+              <p>The non-proprietary performance data recorded by the Department of Energy’s Regional Test Centers (RTC) should be publically available. Currently, there is no way to access this data, and the RTC sites are continually gathering a backlog with no path forward to disseminate. The accessibility of this data is critical in demonstrating the value of the RTC program for the PV and greater solar industry within the United States. I created a web-based system that ingests data from all 5 RTC sites to a centralized database that will allow for public downloads and visualizations of data.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+        
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="m2">
+        <div class="my-auto">
+          <h2 class="mb-5">The Target Users</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Summary</h3>
+                <p>Researchers:</p>
+                <ul>
+                    <li>Highly scientific and technical</li>
+                    <li>Most have a Ph.D. in their field</li>
+                    <li>Very familiar with the meaning of data collected by the photovoltaic systems</li>
+                    <li>Have ideas about displaying data</li>
+                    <li>Have idea on what type of visualizations will be valuable</li>
+                    <li>Basic computing skills</li>
+                </ul>
+              <p>Industry:</p>
+                <ul>
+                    <li>Highly technical</li>
+                    <li>Education varies</li>
+                    <li>Very familiar with the meaning of data collected by the photovoltaic systems</li>
+                    <li>Desire proprietary data</li>
+                    <li>Would like to manipulate dashboards and visualizations</li>
+                    <li>Basic computing skills</li>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+        
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="m3">
+        <div class="my-auto">
+          <h2 class="mb-5">The Problem</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Summary</h3>
+                <p><strong>The previous system:</strong> The data was compiled and sent to a repository, stored in the form of .dat files. These .dat files were not human-readable and often contained previous day or days of information, leading to an overlap if compared side by side. This data was not easily converted to a usable form such as a CSV, rendering it functionally useless for comparison over time and comparison between systems. </p>
+                <p><strong>The new system:</strong> The system  ingests data into a database and allows users a way to export data. The system also contains visualizations of the data that can be manipulated to drill down based on user criteria. This allows for researchers to quickly analyze large and small variances, incomplete data, hardware or system failures, and provide a quick snapshot of the overall performance of a system.</p>
+                <p><strong>The tasks:</strong> Site Info, Export Data, Visualization.</p>
+                <p><strong>The measures: </strong> The success of the system was evaluated based on user perception (System Usability Scale) to register the user’s perceived usability of the system. These scores were contrasted with a Likert scale that asked questions regarding the perceived ease of use. During user testing, user behavior and actions during task scenarios were recorded, which resulted in a task success rate data. Overall engagement of the system was measured based on Google Analytics. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+        
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="m4">
+        <div class="my-auto">
+          <h2 class="mb-5">M3: The Design</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Summary</h3>
+                <p><strong>Infrastructure:</strong> <img src="images/infrastructure.png" width="400"></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p><strong>Home Page:</strong> <img src="images/homepage.png" width="300"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Site Page:</strong> <img src="images/site-page.png" width="300"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Visualization Page:</strong> <img src="images/visualization.png" width="300"></p>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+        
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="m5">
+        <div class="my-auto">
+          <h2 class="mb-5">The Prototype</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Summary</h3>
+                <p><strong>Fidelity:</strong> The system was developed a high-fidelity web-based prototype. Working in code allows for a fast and iterative process. Since the system was able to access to real data, creating this type of prototype allowed the users to see the interactions more clearly, and doesn’t require them to make their own interpretations of how the system will behave. </p>
+                <p><strong>Supported Tasks:</strong></p>
+                <ol>
+                    <li>Export data based on a specific set of user-defined criteria.</li>
+                    <li>Find site specific information such as technical specifications and location.</li>
+                    <li>Manipulate a visualization of data based on a specific set of user-defined criteria.</li>
+                </ol>
+                <p><strong>Unsupported Tasks:</strong></p>
+                <ol>
+                    <li>Authenticate as an authorized user by using a username and password.</li>
+                    <li>View a dashboard of performance and reliability data for available systems.</li>
+                </ol>
+                <p>These tasks were not included as it required too much effort for the scope of the project in terms of securing data and setting up authorization and authentication mechanisms. Also, the actual data I was given and used in the prototype did not include the proprietary data that would be required for this portion of the application.</p>
+
+                <h3>Home Page</h3>
+                <img src="images/rtc-home.png" width="200">
+                <p>Top navigation to the four sites that we hae data for: New Mexico, Florida, Nevada, and Vermont. Links back to the main RTC website. Persistent header. Embedded Google Map with dropped pins locating each of the RTC sites.</p>
+                
+                <h3>Site Page</h3>
+                <img src="images/rtc-site.png" width="200">
+                <p>Details including: location, technical specifications, photos, and climate data. Contains both systems (weather and baseline). Displays system data types.</p>
+                
+                <h3>Query</h3>
+                <img src="images/rtc-query.png" width="200">
+                <p>User can select a date range from either available system. System queries database for limits of available data.</p>
+                
+                <h3>Results</h3>
+                <img src="images/rtc-results.png" width="200">
+                <p>User selects one or more data types and clicks "Build Query." Database builds the query, user's browser will prompt them to save a CSV. The file will reflect the data types as columns and days as rows.</p>
+                
+                <h3>Visualization</h3>
+                <img src="images/rtc-visualization.png" width="200">
+                <p>Controls for adjusting date range/time. Zooming in or out to increase/decrease focus on a particular set of data. Filter by toggling the specific modules to compare side by side. Users can download a snapshot as PNG, JPG, PDF, or SVG.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+        
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="m6">
+        <div class="my-auto">
+          <h2 class="mb-5">Evaluation</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Summary</h3>
+                <p><strong>Pre-test:</strong> The users were interviewed for demographic data prior to the usability test. </p>
+                <p><strong>Tested Tasks:</strong></p>
+                <ol>
+                    <li>Find number of modules per string for the RTC site you select.</li>
+                    <li>Export data as a CSV from an available system based on whatever criteria you select.</li>
+                    <li>Manipulate a visualization of data.</li>
+                </ol>
+                <p><strong>Post-test:</strong></p>
+                <p>Users were emailed two links to questionnaires (Usefulness, Satisfaction, and Ease of Use and System Usability Scale) to complete anonymously and without the proctor present to limit the potential bias. The questions for both questionnaires originate from standardized formats. </p>
+                <p><strong>Results:</strong> There were repeated instances of what I assumed to be clear and obvious interactions for the user proving to be not quite so. My naming convention of "Build Query" on the forms for exporting data was a mismatch from the task instruction of "export CSV," which proved to be a stumbling point for all six users tested.</p>
+                <p><strong>Feature Request:</strong> Asked for system definitions in a tooltip<br>
+                <strong>Cosmetic:</strong> Was unsure of system definitions purpose, Was confused by error thrown by Excel on CSV open<br>
+                <strong>Minor:</strong> Didn't see top navigation on home page, Thought time/temp/etc on visualization page was clickable, Found specs redundant on visualization, Thought colors between two systems were too hard to distinguish<br>
+                <strong>Major:</strong> Didn't see data available dates<br>
+                <strong>Must fix:</strong> Didn't see start/end date, Issue loading site from map, Didn't realize Build Query would export CSV</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+      
+
+  </body>
+
+</html>
